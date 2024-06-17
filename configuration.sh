@@ -55,3 +55,6 @@ exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
 EOF
 sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 sudo systemctl enable --now kubelet
+
+# stop firewalld
+sudo systemctl stop firewalld
